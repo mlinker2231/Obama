@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1430B136219DE5D9008B8EDC /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430B135219DE5D9008B8EDC /* NewViewController.swift */; };
 		1453A37E212C7F5100321AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1453A37D212C7F5100321AEE /* AppDelegate.swift */; };
 		1453A380212C7F5100321AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1453A37F212C7F5100321AEE /* ViewController.swift */; };
 		1453A383212C7F5100321AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1453A381212C7F5100321AEE /* Main.storyboard */; };
 		1453A385212C7F5300321AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1453A384212C7F5300321AEE /* Assets.xcassets */; };
 		1453A388212C7F5300321AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1453A386212C7F5300321AEE /* LaunchScreen.storyboard */; };
+		14DEBF152199F0DC00537157 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DEBF142199F0DC00537157 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1430B135219DE5D9008B8EDC /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		1453A37A212C7F5100321AEE /* NothingButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NothingButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1453A37D212C7F5100321AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1453A37F212C7F5100321AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		1453A384212C7F5300321AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1453A387212C7F5300321AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1453A389212C7F5300321AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14DEBF142199F0DC00537157 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				1453A37D212C7F5100321AEE /* AppDelegate.swift */,
 				1453A37F212C7F5100321AEE /* ViewController.swift */,
 				1453A381212C7F5100321AEE /* Main.storyboard */,
+				1430B135219DE5D9008B8EDC /* NewViewController.swift */,
+				14DEBF142199F0DC00537157 /* ViewController2.swift */,
 				1453A384212C7F5300321AEE /* Assets.xcassets */,
 				1453A386212C7F5300321AEE /* LaunchScreen.storyboard */,
 				1453A389212C7F5300321AEE /* Info.plist */,
@@ -137,6 +143,8 @@
 			files = (
 				1453A380212C7F5100321AEE /* ViewController.swift in Sources */,
 				1453A37E212C7F5100321AEE /* AppDelegate.swift in Sources */,
+				14DEBF152199F0DC00537157 /* ViewController2.swift in Sources */,
+				1430B136219DE5D9008B8EDC /* NewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +291,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XU5H88JMC2;
 				INFOPLIST_FILE = NothingButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +310,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XU5H88JMC2;
 				INFOPLIST_FILE = NothingButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
