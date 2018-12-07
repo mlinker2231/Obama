@@ -181,16 +181,18 @@ class NewViewController: UIViewController {
         }
     }
     @IBAction func Launch(_ sender: UIButton) {
-        var label1Green = ((Label1.backgroundColor == UIColor.green) ? true:false)
-        var label2Green = ((Label2.backgroundColor == UIColor.green) ? true:false)
-        var label3Green = ((Label3.backgroundColor == UIColor.green) ? true:false)
-        var label4Green = ((Label4.backgroundColor == UIColor.green) ? true:false)
-        var label5Green = ((Label5.backgroundColor == UIColor.green) ? true:false)
-        var label6Green = ((Label6.backgroundColor == UIColor.green) ? true:false)
+        var label1Green = true
+        var label2Green = true
+        var label3Green = true
+        var label4Green = true
+        var label5Green = true
+        var label6Green = true
         func whenButtonPressed() {
-            var allLitUp = false
-            if label1Green && label2Green && label3Green && label4Green && label5Green && label6Green {
+            let allLitUp = label1Green && label2Green && label3Green && label4Green && label5Green && label6Green
+            if allLitUp {
                 performSegue(withIdentifier: "ViewController2", sender: sender)
+                print ("Treu==ue")
+                Label1.backgroundColor = .red
             }
         }
     }
