@@ -31,7 +31,7 @@ class NewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+
     }
     @IBAction func Textfielda(_ sender: Any) {
         let alert3 = UIAlertController(title: "random", message: nil, preferredStyle: .alert)
@@ -48,7 +48,7 @@ class NewViewController: UIViewController {
         {print(firstName + " " + lastName)
             self.Label2.text = "hello"
             }
-            
+
         }
                 alert2.addAction(stop)
 
@@ -65,7 +65,7 @@ class NewViewController: UIViewController {
         alert.addAction(ok)
         present(alert,animated: true,completion: nil)
     }
-    
+
     @IBAction func Switch1(_ sender: Any) {
         isSwitched1 = !isSwitched1
         switch isSwitched1 {
@@ -180,8 +180,20 @@ class NewViewController: UIViewController {
             four ? (Label4.backgroundColor = UIColor.red):(Label4.backgroundColor = UIColor.green)
             six ? (Label6.backgroundColor = UIColor.red):(Label6.backgroundColor = UIColor.green)
         }
+        label1Green = ((Label1.backgroundColor == UIColor.green) ? true:false)
+        label2Green = ((Label2.backgroundColor == UIColor.green) ? true:false)
+        label3Green = ((Label3.backgroundColor == UIColor.green) ? true:false)
+        label4Green = ((Label4.backgroundColor == UIColor.green) ? true:false)
+        label5Green = ((Label5.backgroundColor == UIColor.green) ? true:false)
+        label6Green = ((Label6.backgroundColor == UIColor.green) ? true:false)
+        func whenButtonPressed {
+        var allLitUp = false
+        if label1Green && label2Green && label3Green && label4Green && label5Green && label6Green {
+        performSegue(withIdentifier: "ViewController2", sender: sender)
+        }
+        }
     }
-    
+
 
     /*
     // MARK: - Navigation
