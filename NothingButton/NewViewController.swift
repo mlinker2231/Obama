@@ -5,11 +5,10 @@
 //  Created by Michael Linker on 11/15/18.
 //  Copyright © 2018 John Hersey Highschool. All rights reserved.
 //
-
 import UIKit
 
 class NewViewController: UIViewController {
-
+    
     @IBOutlet weak var Label1: UILabel!
     @IBOutlet weak var Label2: UILabel!
     @IBOutlet weak var Label3: UILabel!
@@ -30,7 +29,7 @@ class NewViewController: UIViewController {
     var six = false
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
     }
     @IBAction func Textfielda(_ sender: Any) {
@@ -50,12 +49,12 @@ class NewViewController: UIViewController {
             }
             
         }
-                alert2.addAction(stop)
-
-
+        alert2.addAction(stop)
+        
+        
         present(alert2,animated: true,completion: nil)
-
-
+        
+        
     }
     @IBAction func Alert(_ sender: Any) {
         let alert = UIAlertController(title: "Its gonna work", message: nil, preferredStyle: .alert)
@@ -149,7 +148,7 @@ class NewViewController: UIViewController {
             six ? (Label6.backgroundColor = UIColor.green):(Label6.backgroundColor = UIColor.red)
             three ? (Label3.backgroundColor = UIColor.green):(Label3.backgroundColor = UIColor.red)
         }
-
+        
     }
     @IBAction func Switch5(_ sender: Any) {
         isSwitched5 = !isSwitched5
@@ -181,16 +180,29 @@ class NewViewController: UIViewController {
             six ? (Label6.backgroundColor = UIColor.red):(Label6.backgroundColor = UIColor.green)
         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func Launch(_ sender: UIButton) {
+        var label1Green = ((Label1.backgroundColor == UIColor.green) ? true:false)
+        var label2Green = ((Label2.backgroundColor == UIColor.green) ? true:false)
+        var label3Green = ((Label3.backgroundColor == UIColor.green) ? true:false)
+        var label4Green = ((Label4.backgroundColor == UIColor.green) ? true:false)
+        var label5Green = ((Label5.backgroundColor == UIColor.green) ? true:false)
+        var label6Green = ((Label6.backgroundColor == UIColor.green) ? true:false)
+        func whenButtonPressed() {
+            var allLitUp = false
+            if label1Green && label2Green && label3Green && label4Green && label5Green && label6Green {
+                performSegue(withIdentifier: "ViewController2", sender: sender)
+            }
+        }
     }
-    */
-
+    
+    
+    /*
+     // MARK: - Navigation
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

@@ -441,6 +441,14 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOe-iz-eCC">
+                                <rect key="frame" x="142" y="704" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="Launch:" destination="9zx-jd-wW7" eventType="touchUpInside" id="GMN-8r-kqU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YtI-H5-g6b"/>
@@ -452,11 +460,12 @@
                         <outlet property="Label4" destination="WQf-a8-Ot4" id="mE6-hX-HN5"/>
                         <outlet property="Label5" destination="Vd1-if-USZ" id="Wn2-JI-QwR"/>
                         <outlet property="Label6" destination="HrK-5S-WOl" id="bhS-O8-bp0"/>
+                        <segue destination="gle-aV-8w8" kind="show" identifier="ViewController2" id="Vpr-I4-WIK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MCC-BO-oeW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1892" y="801.72413793103453"/>
+            <point key="canvasLocation" x="1865" y="907"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hlg-y3-5jH">
@@ -477,4 +486,7 @@
             <point key="canvasLocation" x="1077.5999999999999" y="132.26600985221674"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Vpr-I4-WIK"/>
+    </inferredMetricsTieBreakers>
 </document>
